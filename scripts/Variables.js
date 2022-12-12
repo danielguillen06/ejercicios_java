@@ -4,32 +4,32 @@ let angulo2 = 36;
 let angulo3 = 72;
 let result = angulo1 + angulo2 + angulo3;
 
-console.log("suma de los angulos =", result) ;
+console.log("suma de los angulos =", result);
 
 if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
-    console.log( "Triangulo acutangulo");
+    console.log("Triangulo acutangulo");
 
 } else if (angulo1 > 90 && angulo2 < 90 && angulo3 < 90) {
     console.log("triangulo obstusángulo");
-  
-}else {
+
+} else {
     console.log("Rectangulo");
 }
 
 console.log("");
-/************************************************* EJERCICIO 2 **************************************************/  
+/************************************************* EJERCICIO 2 **************************************************/
 console.log("EJERCICIO 2");
-let nota  = 90 ;
+let nota = 90;
 if (0 < nota && nota <= 52) {
     console.log("suspendido");
 
-} else if (60 <= nota && nota <= 79){
+} else if (60 <= nota && nota <= 79) {
     console.log("Aprobado");
 
-} else if (80 <= nota && nota <= 89){
+} else if (80 <= nota && nota <= 89) {
     console.log("Notable");
 
-} else if (90 <= nota && nota <= 100){
+} else if (90 <= nota && nota <= 100) {
     console.log("Sobresaliente");
 
 } else {
@@ -42,10 +42,10 @@ console.log("EJERCICIO 3");
 console.log("traducir Hello world en :");
 let language = "es";
 switch (language) {
-    case "es" :
+    case "es":
         console.log("Hola Mundo");
         break;
-    case "fr" :
+    case "fr":
         console.log("Bonjour Tout le Monde");
         break;
     case "en":
@@ -63,13 +63,13 @@ console.log("");
 console.log("EJERCICIO 4");
 
 let name1 = " sofia ";
-let nationality = "españa" ;
+let nationality = "españa";
 let age = 15;
 
-console.log("nombre:", name1 );
-if ( nationality == "españa"  && age >= 21 ) {
+console.log("nombre:", name1);
+if (nationality == "españa" && age >= 21) {
     console.log("Puede votar");
-}else{
+} else {
     console.log("No puede votar");
 }
 
@@ -90,12 +90,12 @@ console.log("");
 /* ********************************************* EJERCICIO 7 *****************************************************/
 console.log("EJERCICIO 7");
 
-let word= "pampano";
+let word = "pampano";
 console.log(word);
 
-let separarString = word.split(""); 
+let separarString = word.split("");
 let invertirString = separarString.reverse();
-let unirString= invertirString.join(""); 
+let unirString = invertirString.join("");
 console.log(unirString);
 
 console.log("");
@@ -103,33 +103,48 @@ console.log("");
 console.log("EJERCICO 8");
 
 console.log("");
-/********************************************** EJERCICIO 9 ******************************************************/ 
-console.log("EJERCICIO 9");
+/********************************************** EJERCICIO 9 ******************************************************/
+/* console.log("EJERCICIO 9");
 
 let str = prompt("");
 console.log(str);
 
 let primeraLetra = str[0].toLowerCase();
-let restoDelSaludo = str.slice(1,(str.length -1)) ;
-let ultimaLetra = str[(str.length -1)].toUpperCase();
+let restoDelSaludo = str.slice(1, (str.length - 1));
+let ultimaLetra = str[(str.length - 1)].toUpperCase();
 
-frasecompleta = primeraLetra + restoDelSaludo + ultimaLetra ;
-console.log(frasecompleta);
+frasecompleta = primeraLetra + restoDelSaludo + ultimaLetra;
+console.log(frasecompleta); */
 
 /* **************************************************** EJERCICIO 10 ************************************************/
 console.log("EJERCICIO 10");
-                
-	// Get our input reference.
-	let emailField = document.getElementById("user-email");
-	
-	// Define our regular expression.
-	let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
-	// Using test we can check if the text match the pattern.
-	if( validEmail.test(emailField.value) ){
-		console.log( 'Email is valid, continue with form submission');
-	}else{
-		console.log('Email is invalid, skip form submission');
-	}
 
- 
+console.log("");
+/* **************************************************** EJERCICIO 11 ***********************************************/
+console.log("EJERCICIO 11");
+
+for (let num = 0; num <= 40;) {
+    let primo = true;
+    for (let e = 0; e < num; e++) {
+        if (num % e == 0 && num !== e && e != 1) {
+            primo = false;
+            break;
+        }
+    }
+
+    if (num == 1) {
+        primo = false;
+    }
+
+    if (primo === true) {
+        console.log("soy primo:", num);
+    } else {
+        console.log("no lo soy:", num);
+    }
+    num++;
+}
+
+console.log("");
+/* *************************************************** EJERCICIO 12 ********************************************* */
+console.log("");
