@@ -193,6 +193,28 @@ kaka? console.log("true") : console.log("false");; */
 
 /* console.log(hola("lll")); */
 
+function ejercicio1() {
+    console.log("Hello World");
+}
+ejercicio1 ();
+console.log("");
+
+function ejercicio2() {
+    let side = 4;
+    console.log("numero:",side);
+    let squareArea = side ** 2;
+    console.log("Numero al cuadrado:", squareArea);    
+}
+ejercicio2();
+console.log("");
+
+let name1= prompt("");
+function ejercicio3(name) {
+    console.log("Hi!!,", name);
+}
+ejercicio3(name1);
+
+/* ******************************************************* Objetos ************************************************************* */
 /* let obj = {
     A: "esto",
     b: 324234,
@@ -282,3 +304,8 @@ console.log(Object.hasOwn(cat, "foods")); // false */
 }
 
 console.log(Object.entries(cat)); // [["name", "Patty"], ["legs", 4]] */
+
+/* ******************************************************* Objetos ejercicios ************************************************************* */
+
+
+
