@@ -122,7 +122,7 @@ console.log("EJERCICIO 10");
 
 console.log("");
 /* **************************************************** EJERCICIO 11 ***********************************************/
-console.log("EJERCICIO 11");
+/* console.log("EJERCICIO 11");
 
 for (let num = 0; num <= 40;) {
     let primo = true;
@@ -145,6 +145,69 @@ for (let num = 0; num <= 40;) {
     num++;
 }
 
-console.log("");
+console.log(""); */
 /* *************************************************** EJERCICIO 12 ********************************************* */
+console.log("EJERCICIO 12");
+
 console.log("");
+/* *************************************************** EJERCICO 13 *******************************************************/
+/* console.log("EJERCICIO 13");
+
+for ( i = 0; i <= 100; i +=3 ) {
+    console.log("numero: ", i);
+}
+
+console.log(""); */
+/* ************************************************ EJERCICIO 14 *******************************************************/
+console.log("EJERCICIO 14");
+
+/* let j = 0;
+let i = 0;
+
+for (i = 0; i <= 2;){
+    console.log("indice de bucle externo: ", i);
+    for (j = 0; j <= 4; j++){
+        console.log("bucle interno: ", j);
+    }
+ i++
+}
+
+console.log(""); */
+/* ********************************************** EJERCICIO 15 ***********************************************************/
+/* console.log("EJERCICIO 15");
+
+let m = 0;
+let s = 0;
+
+for ( m = 0; m <= 2;) {
+    for ( s = 0; s < 10; s++){
+        console.log( `${m} : ${s}` );
+    }
+    m++
+}
+
+console.log(""); */
+/* ****************************************************** EJERCICIO 16 ***************************************************/
+console.log("EJERCICIO 16");
+
+let palabraCualquiera = prompt("javaScript");
+let letraCualquiera = "S";
+console.log("tamaño:", palabraCualquiera.length);
+let validateLetter = false;
+
+for (let i = 0; i <= palabraCualquiera.length; i++) {
+    if (palabraCualquiera[i] == letraCualquiera.toLocaleLowerCase() || palabraCualquiera[i] == letraCualquiera.toUpperCase()) {
+        console.log("S");
+        validateLetter = true;
+        console.log(palabraCualquiera.slice(0, i));
+    }
+
+    for (let j = 0; j <= i; j++) {
+        
+    }
+}
+
+if (!validateLetter) {
+    console.log("la palabra no contiene la letra:");
+}
+
