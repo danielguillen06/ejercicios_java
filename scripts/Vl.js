@@ -193,26 +193,108 @@ kaka? console.log("true") : console.log("false");; */
 
 /* console.log(hola("lll")); */
 
-function ejercicio1() {
+/******************************************************* EJERCICOS DE FUNCIONES *******************************************/
+/* function ejercicio1() {
     console.log("Hello World");
 }
 ejercicio1 ();
 console.log("");
 
-function ejercicio2() {
-    let side = 4;
+
+let side = 4;
+function ejercicio2(side) {
     console.log("numero:",side);
     let squareArea = side ** 2;
     console.log("Numero al cuadrado:", squareArea);    
 }
-ejercicio2();
+ejercicio2(side);
 console.log("");
+
 
 let name1= prompt("");
 function ejercicio3(name) {
-    console.log("Hi!!,", name);
+    if (name) {
+        console.log("Hi!!,", name);   
+    } else {
+        console.log("No se introdujo ningun nombre... ERROR 404");
+    }
 }
 ejercicio3(name1);
+console.log(""); */
+
+
+/* function ejercicio4(ladob = 5, ladoh = 3) {
+    const area = ladob * ladoh;
+    console.log("El area del rectangulo: ", area);
+}
+ejercicio4(6, 8);
+console.log(""); */
+
+
+/* let celsius = 5;
+console.log("grados =", celsius + "ºC");
+function ejercicio5(temperatura) {
+    let conversion = (temperatura * 1.8) + 32;
+    return conversion;
+}
+let conversion = ejercicio5(celsius);
+console.log("la temperatura en grados ºF es:", conversion + "ºF");
+console.log(""); */
+
+
+/* let cadena1 = prompt("");
+function ejercicio6(cadena) {
+    let contador = 0;
+    for (letra in cadena) {
+        if (["a","e","i","o","u"].includes(cadena[letra].toLowerCase()) ) {
+            contador++;
+        }
+    }
+    return contador;
+}
+let cantidad = ejercicio6(cadena1);
+console.log("en la frase = " + cadena1, "exiten = " + cantidad, "vocales.");
+console.log("");  */
+/* let cadena = prompt("");
+function ejercicio6(cadena) {
+    contador = 0;
+    for (i = 0; i < cadena.length; i++) {
+        if ((cadena[i] == "a") ||
+            (cadena[i] == "e") ||
+            (cadena[i] == "i") ||
+            (cadena[i] == "o") ||
+            (cadena[i] == "u")) {
+            contador ++ ;
+        }
+    }
+    return contador;
+}
+ejercicio6(cadena);
+console.log("La frase " + cadena, " exiten = " +  contador + " vocales.");
+console.log("");*/
+
+
+
+/* function ejercicio7(min, max) {
+    return Math.random() * (max - min) + min ;
+}
+
+let rango = ejercicio7(2,4)
+console.log("el rango es =", rango);
+console.log(""); */
+
+
+let numeros = [10, 5, 7, 8, 6, 3];
+function ejercicio8(par) {
+    let pares = par.filter( par2 => par2 % 2 === 0);
+    return pares;
+}
+console.log(ejercicio8(numeros));
+
+
+
+
+
 
 /* ******************************************************* Objetos ************************************************************* */
 /* let obj = {
@@ -236,17 +318,17 @@ obj.c.push(hola) */
 console.log(Object.values(obj)); */
 
 /* const user = {
-	name: "John",
-	lastname: "Doe",
-	age: 24,
-	isMarried: false
+    name: "John",
+    lastname: "Doe",
+    age: 24,
+    isMarried: false
 }
 /* sacamos las keys y las convertimos a un array 
 const keys111 = Object.keys(user);
 console.log(keys111);
 
 for (let i = 0; i < keys111.length; i++) {
-	console.log(keys111[i],":", user[keys111[i]]);
+    console.log(keys111[i],":", user[keys111[i]]);
 }
 
  */
@@ -290,8 +372,8 @@ console.log(ascendingList);   // [1, 2, 4, 5, 8]
 console.log(descendingList);  // [8, 5, 4, 2, 1] */
 
 /* const cat = {
-	name: "Patty",
-	legs: 4
+    name: "Patty",
+    legs: 4
 }
 
 console.log(Object.hasOwn(cat, "legs")); // true
@@ -299,8 +381,8 @@ console.log(Object.hasOwn(cat, "foods")); // false */
 
 
 /* const cat = {
-	name: "Patty",
-	legs: 4
+    name: "Patty",
+    legs: 4
 }
 
 console.log(Object.entries(cat)); // [["name", "Patty"], ["legs", 4]] */
